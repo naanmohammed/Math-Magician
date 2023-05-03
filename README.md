@@ -72,7 +72,7 @@ In order to run this project you need:
 
     - Clone this repository to your desired folder.
             -cd my-folder
-            -git clone git@github.com:naanmohammed/leaderboard.git
+            -git clone git@github.com:naanmohammed/Math-Magician.git
 
 ### Install
 
