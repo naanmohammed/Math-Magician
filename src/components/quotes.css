@@ -1,0 +1,30 @@
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 33rem;
+}
+
+.quotes p {
+  color: black;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.failed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 1rem;
+}
