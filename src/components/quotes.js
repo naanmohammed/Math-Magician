@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 function Quotes() {
   const [quotes, setQuotes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     const category = 'computers';
@@ -16,6 +17,7 @@ function Quotes() {
         const data = await res.json();
         setQuotes(data);
       } catch (error) {
+        setHasError(true);
         setQuotes([]);
       } finally {
         setIsLoading(false);
@@ -28,10 +30,18 @@ function Quotes() {
     return <div className="loading">Loading quotes ...</div>;
   }
 
-  if (!quotes.length) {
+  if (hasError) {
     return (
       <div className="failed">
         Failed to load quotes.
+      </div>
+    );
+  }
+
+  if (!quotes.length) {
+    return (
+      <div className="failed">
+        No quotes found.
       </div>
     );
   }
