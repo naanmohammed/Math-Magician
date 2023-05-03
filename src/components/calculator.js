@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './quotes.css';
 import './calculator.css';
 import calculate from '../logic/calculate';
 import ChildComponent from './childComponent';
