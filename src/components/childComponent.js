@@ -10,7 +10,7 @@ function ChildComponent({ calcData, handleButtonClick }) {
         id="myInput"
         name="name"
         pattern="[0-9+\-*/(). ]+"
-        value={calcData.next || calcData.operation || calcData.total || ''}
+        value={calcData.next || calcData.operation || calcData.total || '0'}
         onChange={() => {}}
       />
       <div className="calculator-buttons">
