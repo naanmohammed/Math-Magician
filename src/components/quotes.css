@@ -43,7 +43,7 @@ ul {
   }
 }
 
-@media only screen and (width > 768px) and (width < 1200px)  {
+@media only screen and (width > 768px) and (width < 1200px) {
   .quotes {
     justify-content: left;
     align-items: flex-start;

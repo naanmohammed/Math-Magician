@@ -71,7 +71,7 @@
   }
 }
 
-@media only screen and (width > 768px) and (width < 1200px)  {
+@media only screen and (width > 768px) and (width < 1200px) {
   .calculator-container {
     width: 65%;
   }
