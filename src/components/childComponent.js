@@ -10,143 +10,34 @@ function ChildComponent({ calcData, handleButtonClick }) {
         id="myInput"
         name="name"
         pattern="[0-9+\-*/(). ]+"
-        value={calcData.next || calcData.total || ''}
+        value={calcData.next || calcData.operation || calcData.total || '0'}
         onChange={() => {}}
       />
       <div className="calculator-buttons">
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('AC')}
-        >
-          AC
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('+/-')}
-        >
-          +/-
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('%')}
-        >
-          %
-        </button>
-        <button
-          className="calculator-button math-button-orange"
-          type="button"
-          onClick={() => handleButtonClick('÷')}
-        >
-          ÷
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('7')}
-        >
-          7
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('8')}
-        >
-          8
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('9')}
-        >
-          9
-        </button>
-        <button
-          className="calculator-button math-button-orange"
-          type="button"
-          onClick={() => handleButtonClick('x')}
-        >
-          x
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('4')}
-        >
-          4
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('5')}
-        >
-          5
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('6')}
-        >
-          6
-        </button>
-        <button
-          className="calculator-button math-button-orange"
-          type="button"
-          onClick={() => handleButtonClick('-')}
-        >
-          -
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('1')}
-        >
-          1
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('2')}
-        >
-          2
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('3')}
-        >
-          3
-        </button>
-        <button
-          className="calculator-button math-button-orange"
-          type="button"
-          onClick={() => handleButtonClick('+')}
-        >
-          +
-        </button>
-        <button
-          className="calculator-button zero-button"
-          type="button"
-          onClick={() => handleButtonClick('0')}
-        >
-          0
-        </button>
-        <button
-          className="calculator-button"
-          type="button"
-          onClick={() => handleButtonClick('.')}
-        >
-          .
-        </button>
-        <button
-          className="calculator-button math-button-orange"
-          type="button"
-          onClick={() => handleButtonClick('=')}
-        >
-          =
-        </button>
+        {[['AC', '+/-', '%', '÷'],
+          ['7', '8', '9', 'x'],
+          ['4', '5', '6', '-'],
+          ['1', '2', '3', '+'],
+          ['0', '.', '='],
+        ].map((row) => (
+          <div className="calculator-row" key={row.join('-')}>
+            {row.map((button) => (
+              <button
+                className={`calculator-button ${
+                  button === '÷' || button === 'x' || button === '-' || button === '+' ? 'math-button-orange' : ''
+                } ${
+                  button === '0' ? 'zero-button' : ''
+                }`}
+                type="button"
+                onClick={() => handleButtonClick(button)}
+                key={button}
+                id={button}
+              >
+                {button}
+              </button>
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );
