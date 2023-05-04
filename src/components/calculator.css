@@ -1,5 +1,5 @@
 .calculator-container {
-  width: 35rem;
+  width: 45%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -63,4 +63,16 @@
 
 .math-button-orange:active {
   background-color: rgb(179, 93, 0);
+}
+
+@media only screen and (max-width: 768px) {
+  .calculator-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (width > 768px) and (width < 1200px)  {
+  .calculator-container {
+    width: 65%;
+  }
 }
