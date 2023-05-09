@@ -1,13 +1,12 @@
+import { Outlet } from 'react-router';
 import './App.css';
-import Calculator from './components/calculator';
+import Homepage from './pages/homepage';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1>MATH MAGICIAN APPLICATION</h1>
-      <Calculator />
-    </div>
+    <>
+      <Homepage />
+      <Outlet />
+    </>
   );
 }
-
-export default App;

@@ -1,3 +1,53 @@
-.App h1 {
-  text-align: center;
+body {
+  padding: 0 15px;
+}
+
+.navBar {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.navHeader {
+  font-size: 48px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.menuItem {
+  color: blue;
+}
+
+.calculatorPage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin-top: 35px;
+  width: 70%;
+}
+
+.calculator-container {
+  width: 100%;
+}
+
+.calculatorPage h2 {
+  width: 50%;
+  font-size: 30px;
+}
+
+.quotesPage h2 {
+  padding-top: 10rem;
+  font-size: 48px;
 }
