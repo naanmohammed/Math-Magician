@@ -12,7 +12,7 @@ describe('ChildComponent', () => {
 
   it('renders the component', () => {
     render(
-      <ChildComponent calcData={mockCalcData} handleButtonClick={mockHandleButtonClick} />
+      <ChildComponent calcData={mockCalcData} handleButtonClick={mockHandleButtonClick} />,
     );
 
     const calculatorElement = screen.getByRole('textbox');
