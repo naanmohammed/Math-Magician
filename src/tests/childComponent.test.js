@@ -11,12 +11,10 @@ describe('ChildComponent', () => {
   };
 
   it('renders the component', () => {
-    render(
+    const { container } = render(
       <ChildComponent calcData={mockCalcData} handleButtonClick={mockHandleButtonClick} />,
     );
-
-    const calculatorElement = screen.getByRole('textbox');
-    expect(calculatorElement).toBeInTheDocument();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('calls handleButtonClick when a button is clicked', () => {
