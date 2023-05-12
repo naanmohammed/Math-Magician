@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, act } from '@testing-library/react';
+import { render, act, screen } from '@testing-library/react';
 import Quotes from '../components/quotes';
 
 describe('Quotes', () => {
@@ -8,11 +8,10 @@ describe('Quotes', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
   it('should render failed message if quotes failed to fetch', async () => {
-    jest.spyOn(global, 'fetch').mockImplementation(() => {
-      Promise.reject(new Error('Failed to fetch quotes'));
-    });
+    jest.spyOn(global, 'fetch').mockImplementation(() => Promise.reject(new Error('Failed to fetch quotes')));
     await act(async () => {
       render(<Quotes />);
     });
+    expect(screen.getByText(/Failed to load quotes/)).toBeInTheDocument();
   });
 });
