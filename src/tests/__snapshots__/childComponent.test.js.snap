@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChildComponent renders the component 1`] = `
+<div
+  class="calculator-container"
+>
+  <input
+    class="calculator-input-field"
+    id="myInput"
+    name="name"
+    pattern="[0-9+\\\\-*/(). ]+"
+    type="text"
+    value="+"
+  />
+  <div
+    class="calculator-buttons"
+  >
+    <div
+      class="calculator-row"
+    >
+      <button
+        class="calculator-button  "
+        id="AC"
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        class="calculator-button  "
+        id="+/-"
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        class="calculator-button  "
+        id="%"
+        type="button"
+      >
+        %
+      </button>
+      <button
+        class="calculator-button math-button-orange "
+        id="÷"
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      class="calculator-row"
+    >
+      <button
+        class="calculator-button  "
+        id="7"
+        type="button"
+      >
+        7
+      </button>
+      <button
+        class="calculator-button  "
+        id="8"
+        type="button"
+      >
+        8
+      </button>
+      <button
+        class="calculator-button  "
+        id="9"
+        type="button"
+      >
+        9
+      </button>
+      <button
+        class="calculator-button math-button-orange "
+        id="x"
+        type="button"
+      >
+        x
+      </button>
+    </div>
+    <div
+      class="calculator-row"
+    >
+      <button
+        class="calculator-button  "
+        id="4"
+        type="button"
+      >
+        4
+      </button>
+      <button
+        class="calculator-button  "
+        id="5"
+        type="button"
+      >
+        5
+      </button>
+      <button
+        class="calculator-button  "
+        id="6"
+        type="button"
+      >
+        6
+      </button>
+      <button
+        class="calculator-button math-button-orange "
+        id="-"
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      class="calculator-row"
+    >
+      <button
+        class="calculator-button  "
+        id="1"
+        type="button"
+      >
+        1
+      </button>
+      <button
+        class="calculator-button  "
+        id="2"
+        type="button"
+      >
+        2
+      </button>
+      <button
+        class="calculator-button  "
+        id="3"
+        type="button"
+      >
+        3
+      </button>
+      <button
+        class="calculator-button math-button-orange "
+        id="+"
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      class="calculator-row"
+    >
+      <button
+        class="calculator-button  zero-button"
+        id="0"
+        type="button"
+      >
+        0
+      </button>
+      <button
+        class="calculator-button  "
+        id="."
+        type="button"
+      >
+        .
+      </button>
+      <button
+        class="calculator-button  "
+        id="="
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;

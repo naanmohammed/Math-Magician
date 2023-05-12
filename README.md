@@ -51,7 +51,7 @@ HTML, CSS, and React
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Live Demo
-A live demo of this project will soon be available on netlify and github pages.
+[Click Here](https://naans-calculator.onrender.com/)
 
 <!-- GETTING STARTED -->
 
@@ -89,7 +89,7 @@ To run the project :
 To run tests, run the following command:
 
 ```sh
-Run "npx stylelint "**/*.{css,scss}" --fix " to fix linters 
+Run "npm test " to fix linters 
 ```
 
 
@@ -99,6 +99,7 @@ You can deploy this project using:
 
   -GitHub pages
   -Netlify
+  -Render
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -113,13 +114,19 @@ You can deploy this project using:
 - Twitter: [@_naanahmed](https://twitter.com/_naanahmed_)
 - LinkedIn: [naanahmed](https://linkedin.com/in/naanahmed)
 
+👤 **Roodjino Cherilus**
+
+- GitHub: [roodjino](https://github.com/roodjinocherilus)
+- LinkedIn: [roodjino](https://www.linkedin.com/in/roodjinocherilus/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add ability to do Calculus problems**
+- **Add ability to do Calculus problems**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

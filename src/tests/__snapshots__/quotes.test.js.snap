@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quotes should render loading message while quotes are being fetched 1`] = `
+<div
+  class="loading"
+>
+  Loading quotes ...
+</div>
+`;

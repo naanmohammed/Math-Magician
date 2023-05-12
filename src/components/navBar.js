@@ -6,13 +6,13 @@ function NavBar() {
     <div className="navBar">
       <Link to="/" className="navHeader">Math Magicians</Link>
       <div className="menu">
-        <Link to="/" exact className="menuItem">
+        <Link to="/" exact="true" className="menuItem">
           Home |
         </Link>
-        <Link to="/calculator" exact className="menuItem">
+        <Link to="/calculator" exact="true" className="menuItem">
           Calculator |
         </Link>
-        <Link to="/quote" exact className="menuItem">
+        <Link to="/quote" exact="true" className="menuItem">
           Quote
         </Link>
       </div>
