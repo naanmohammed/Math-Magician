@@ -1,4 +1,5 @@
 import operate from '../logic/operate';
+
 describe('operate', () => {
   it('adds two numbers correctly', () => {
     expect(operate(2, 3, '+')).toBe('5');
