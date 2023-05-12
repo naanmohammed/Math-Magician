@@ -8,9 +8,9 @@ describe('Quotes', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
   it('should render failed message if quotes failed to fetch', async () => {
-    jest.spyOn(global, 'fetch').mockImplementation(() =>
+    jest.spyOn(global, 'fetch').mockImplementation(() => {
       Promise.reject(new Error('Failed to fetch quotes'))
-  );
+    });
     await act(async () => {
       render(<Quotes />);
     });
